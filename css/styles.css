@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color-white: #ffffff;
+    --bg-color-dark: #2d2e30;
+    --bg-color-black: #0e0d0d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    background-color: var(--bg-color-black);
+    border: none;
+}
+
+.navbar-nav .nav-link {
+    font-size: 0.9rem;
+}
+
+.navbar .nav-link {
+    color: var(--bg-color-white)
+}
+
+.navbar .nav-link:hover {
+    color: #b4b1b1
+}
+
+.navbar-brand img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    vertical-align: middle;
+    filter: invert(1)
+}
+
+
+.inicio {
+    padding: 0; /* Remover padding para ocupar toda a tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz a div ocupar 100% da altura da tela */
+    background-image: url('../images/clinicaCadeira_darker_blurred_v2.jpg');
+    background-size: cover; /* Cobre toda a área da div */
+    background-position: center; /* Centraliza a imagem */
+    background-color: var(--bg-color-dark);
+    color: #dfdfdf;
+    width: 100%;
+    text-align: left;
+}
+
+.header {
+    padding-left: 2rem;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.subtitulo {
+    font-weight: bold;
+    font-size: small;
+    text-align: left;
+}
+
+.conteudo {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #3a3b3d;
+}
+
+.conteudo p, h2 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #dfdfdf;
+}
+.conteudo img {
+    width: 100%;
+    height: auto;
+    max-width: 700px ;
+}
+
+.carousel{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+.carousel-inner img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    transform: translateY(-30%);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit:scale-down;
+}
+
+.instalacoes, .tecnicas, .filosofia, .curriculum, .contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+
+.cards-tecnicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    column-gap: 20px;
+}
+
+
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    min-height: 300px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.image-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.topicos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-color-dark);
+}
+
+.topicos {
+    background-color: var(--bg-color-dark);
+    color: var(--bg-color-white);
+    width: 700px;
+}
+
+figure {
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+figcaption {
+    font-style: normal;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: rgba (255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: "Montserrat",  sans-serif;
+}
+
+li:hover {
+    background-color: rgba (255, 255, 255, 0.3);
+}
+
+.image-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.foto-inicio {
+    width: 100%px;
+    height: auto;
+    max-width: 500px;
+}
+
+.faleConosco {
+    font-size: small;
+    font-weight: bold;
+}
+
+.btn-outline-dark {
+    color: var(--bg-color-white);
+    border-color: var(--bg-color-white);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--bg-color-white);
+    color: var(--bg-color-black);
+    border-color: var(--bg-color-black);
+    font-family: "Montserrat",  sans-serif;
+
+}
+
+.horarios {
+    background-color: var(--bg-color-dark);
+    color: var(--bg-color-black);
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Montserrat",  sans-serif;
+
+}
+
+.horarios h5 {
+    color: var(--bg-color-white) ;
+}
+
+.horarios p {
+    color: var(--bg-color-white);
+}
+
+
+@media(max-width: 768px) {
+    .inicio {
+        padding: 1rem;
+    }
+
+    .conteudo {
+        padding: 1rem;
+    }
+
+    .subtitulo {
+        font-size: x-small;
+    }
+
+    .cards-tecnicas {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+}
